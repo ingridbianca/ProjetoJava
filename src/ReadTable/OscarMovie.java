@@ -49,7 +49,7 @@ public class OscarMovie {
         	    String title = e.select("td.posterColumn img").attr("alt");
         	    String year = e.select("td.titleColumn span.secondaryInfo").text().replaceAll("[^\\d]", "");
         	    String rate = e.select("td.ratingColumn.imdbRating").text().trim();
-                System.out.println(title);
+       
         	    data.add(new String[] {title, year, rate, img});
                 
                 
